@@ -26,7 +26,11 @@ was implemented in Python using a set intersection function. First we identify a
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: Diagonals were added to the cross function. The diagonals were set and added to the unitlist alongside the other units. We use the same constraint propagation method as we do for other portions of the code such as rows, columns and squares. Diagonal is one other constraint added in addition to those constraings. 
+
+diag1 = [[str(r)+str(10- int(c)) for (r,c) in zip(rows,cols)]]
+diag2 = [[r+c for (r,c) in zip(rows,cols)]]
+unitlist = row_units + column_units + square_units + diag1 + diag2
 
 ### Install
 
