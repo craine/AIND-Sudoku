@@ -15,7 +15,7 @@ A Counter was used to store values within the unit that were equal. Above exampl
 <img src="https://drive.google.com/uc?export=view&id=0B6Hft83pceJ9N3BBdUt2QzQ4aWc" width="784" height="395"/>
 
 
-Naked twins in used after eliminate and only-choice are run in order to further reduce the number of possibilities.
+Naked twins in used after eliminate and only-choice in reduce_puzzle in order to further reduce the number of possibilities before running the naked twins.
 
 <img src="https://drive.google.com/uc?export=view&id=0B6Hft83pceJ9bm5MNXpFRjJlcE0" width="771" height="237"/>
 
