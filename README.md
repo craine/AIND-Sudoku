@@ -24,22 +24,6 @@ Naked twins in used after eliminate and only-choice in reduce_puzzle in order to
 was implemented in Python using a set intersection function. First we identify all boxes that have only 2 elements. Next we identify which boxes among these have the same elements to get naked twins. Once we get the naked twins, we remove the corresponding digits from all the boxes that are peers to both the twins. This is illustrated in the code snippet below.
 
 
-
-
-    for unit in unitlist:
-        # count the number times that similar box occurs in a unit
-        unitCounter = Counter([values[box] for box in unit])
-        for boxTwins, count in unitCounter.items():
-            # find all available boxes that are greater than 1
-            if 1 < count == len(boxTwins):
-                for box in unit:
-                    # remove all values that exist for naked twins
-                    if values[box] != boxTwins and set(values[box]).intersection(set(boxTwins)):
-                        for digit in boxTwins:
-                            values = assign_value(values, box, values[box].replace(digit, ''))
-    return values
-
-
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
 A: *Student should provide answer here*
