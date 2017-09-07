@@ -9,7 +9,7 @@ For Naked Twins the idea is taking the smallest number with twin values and comp
 
 
 
-<img src="https://drive.google.com/uc?export=view&id=0B6Hft83pceJ9NnFvNHg0MjhMcmc" width="100" height="100"/>
+<img src="https://drive.google.com/uc?export=view&id=0B6Hft83pceJ9NnFvNHg0MjhMcmc" width="400" height="365"/>
 
 
 
