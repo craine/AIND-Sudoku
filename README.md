@@ -5,7 +5,11 @@
 Q: How do we use constraint propagation to solve the naked twins problem?  
 A: Constraint Propagation, in the case of Naked Twins, requires the constraint of each square reduce the search space. By enforce each constraint, we are able to see how it introduces new constraints for other parts of the board that can help us further reduce the number of possibilities. 
 
-For Naked Twins the idea is taking the smallest number with twin values and compare those to the unit. Once it is determined that values were equal to other units we use constraint propagation by using one value (in image below it is 2,3) first is the 2 from 
+For Naked Twins the idea is taking the smallest number with twin values and compare those to the unit. Once it is determined that values were equal to other units we use constraint propagation by using one value (in image below it is 2,3) first is the 2. That number is added to row F3, for instance. Then the puzzle is run to see if it is solved. If it is not then 3 is used to solve the puzzle. The constraint allows us to then fill in the other values, if F3 = 2 then I3 must be 3. That is the constraint. If that is false, meaning did not solve the puzzle, then F3 = 3, therefore I3 must be 2. And, by the way, As these constraints are added it rules out 2 and 3 from D/E3. Thus D3/E3 are 79.
+
+
+
+![Alt text](https://drive.google.com/file/d/0B6Hft83pceJ9NnFvNHg0MjhMcmc/view?usp=sharing)
 
 
 
