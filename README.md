@@ -3,7 +3,26 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: Constraint Propagation, in the case of Naked Twins, requires the constraint of each square reduce the search space. By enforce each constraint, we are able to see how it introduces new constraints for other parts of the board that can help us further reduce the number of possibilities. 
+
+For Naked Twins the idea is taking the smallest number with twin values and compare those to the unit. Once it is determined that values were equal to other units we use constraint propagation by using one value (in image below it is 2,3) first is the 2 from 
+
+
+
+
+    for unit in unitlist:
+        # count the number times that similar box occurs in a unit
+        unitCounter = Counter([values[box] for box in unit])
+        for boxTwins, count in unitCounter.items():
+            # find all available boxes that are greater than 1
+            if 1 < count == len(boxTwins):
+                for box in unit:
+                    # remove all values that exist for naked twins
+                    if values[box] != boxTwins and set(values[box]).intersection(set(boxTwins)):
+                        for digit in boxTwins:
+                            values = assign_value(values, box, values[box].replace(digit, ''))
+    return values
+
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
