@@ -31,6 +31,7 @@ A: Diagonals were added to variables. The diagonals were set and added to the un
 
 diag_units = [[r + c for r,c in zip(rows,cols)],
               [r+ c for r,c in zip(rows,cols[::-1])]]
+              
 unitlist = row_units + column_units + square_units + diag_units
 
 
